@@ -4,5 +4,17 @@
     "Weight": 75,
     "BMI": "27.217",
     "Status": "Overweight"
+  },
+  {
+    "Height": 1.7,
+    "Weight": 55,
+    "BMI": "19.031",
+    "Status": "Normal weight"
+  },
+  {
+    "Height": 1.7,
+    "Weight": 60,
+    "BMI": "20.761",
+    "Status": "Normal weight"
   }
 ]
