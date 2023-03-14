@@ -6,7 +6,6 @@
     "Status": "Overweight"
   },
   {
-<<<<<<< HEAD
     "Height": 1.6,
     "Weight": 50,
     "BMI": "19.531",
@@ -16,17 +15,12 @@
     "Height": 1.6,
     "Weight": 50,
     "BMI": "19.531",
-=======
-    "Height": 1.7,
-    "Weight": 55,
-    "BMI": "19.031",
     "Status": "Normal weight"
   },
   {
     "Height": 1.7,
     "Weight": 60,
     "BMI": "20.761",
->>>>>>> 0db6cf9e4f32c8833519d9c7a866e27e8db08797
     "Status": "Normal weight"
   }
 ]

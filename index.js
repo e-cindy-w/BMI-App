@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const bodyParser = require('body-parser');
 const { response, raw } = require('express');
 const urlEncodedParser = bodyParser.urlencoded({extended: false});
@@ -54,4 +54,4 @@ app.get('/reports', (request, response) => {
 })
 
 app.listen(port);
-console.log('Server is listening on port 3000');
+console.log(`Server is listening on port ${port}`);
