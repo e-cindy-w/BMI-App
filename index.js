@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3000;
-//const port = 3000;
+// const port = process.env.PORT || 3000;
+const port = 3000;
 const bodyParser = require('body-parser');
 const { response, raw } = require('express');
 const urlEncodedParser = bodyParser.urlencoded({extended: false});
@@ -20,7 +20,7 @@ app.get('/', (request, response)=>{
     response.render('bmiCalc');
 });
 
-app.post('/calculateBMI', urlEncodedParser, (request, response)=>{
+function calculateBMI(request, response){
     var height = parseFloat(request.body.height);
     var weight = parseFloat(request.body.weight);
     var bmi = (weight/Math.pow(height, 2)).toFixed(3);
@@ -39,7 +39,6 @@ app.post('/calculateBMI', urlEncodedParser, (request, response)=>{
     }else if(bmi >= 40){
         status = "Obesity (Class III)";
     }
-
     const bmiVal = request.body;
     const bmiObject = {Height: height, Weight: weight, BMI: bmi, Status: status}
 
@@ -47,13 +46,18 @@ app.post('/calculateBMI', urlEncodedParser, (request, response)=>{
     fs.writeFileSync(fileName, JSON.stringify(data, null, 2));
 
     return response.render('bmiResults', {bmiObject});
-});
+}
 
-app.get('/reports', (request, response) => {
+function reports(request, response){
     response.render('bmiReports', {data});
+}
 
-})
+app.post('/calculateBMI', urlEncodedParser, calculateBMI);
+app.get('/reports', reports);
+module.exports = {calculateBMI, reports};
 
-app.listen(port);
-console.log(`Server is listening on port ${port}`);
-//console.log('Server is listening on port 3000');
+// app.listen(port);
+// // console.log(`Server is listening on port ${port}`);
+// console.log('Server is listening on port 3000');
+
+

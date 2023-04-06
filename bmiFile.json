@@ -22,5 +22,89 @@
     "Weight": 60,
     "BMI": "20.761",
     "Status": "Normal weight"
+  },
+  {
+    "Height": 170,
+    "Weight": 50,
+    "BMI": "0.002",
+    "Status": "Underweight"
+  },
+  {
+    "Height": 1.7,
+    "Weight": 50,
+    "BMI": "17.301",
+    "Status": "Underweight"
+  },
+  {
+    "Height": 1.7,
+    "Weight": 50,
+    "BMI": "17.301",
+    "Status": "Underweight"
+  },
+  {
+    "Height": 1.7,
+    "Weight": 50,
+    "BMI": "17.301",
+    "Status": "Underweight"
+  },
+  {
+    "Height": 1.7,
+    "Weight": 50,
+    "BMI": "17.301",
+    "Status": "Underweight"
+  },
+  {
+    "Height": 1.7,
+    "Weight": 50,
+    "BMI": "17.301",
+    "Status": "Underweight"
+  },
+  {
+    "Height": 1.7,
+    "Weight": 50,
+    "BMI": "17.301",
+    "Status": "Underweight"
+  },
+  {
+    "Height": 1.7,
+    "Weight": 50,
+    "BMI": "17.301",
+    "Status": "Underweight"
+  },
+  {
+    "Height": 1.7,
+    "Weight": 50,
+    "BMI": "17.301",
+    "Status": "Underweight"
+  },
+  {
+    "Height": 1.7,
+    "Weight": 50,
+    "BMI": "17.301",
+    "Status": "Underweight"
+  },
+  {
+    "Height": 1.7,
+    "Weight": 50,
+    "BMI": "17.301",
+    "Status": "Underweight"
+  },
+  {
+    "Height": 1.7,
+    "Weight": 50,
+    "BMI": "17.301",
+    "Status": "Underweight"
+  },
+  {
+    "Height": 1.7,
+    "Weight": 50,
+    "BMI": "17.301",
+    "Status": "Underweight"
+  },
+  {
+    "Height": 1.7,
+    "Weight": 50,
+    "BMI": "17.301",
+    "Status": "Underweight"
   }
 ]
